@@ -123,7 +123,7 @@ clear
 echo -e "\e[$banner_colour"
 figlet -f $ascii "$banner"
 echo -e "\e[$text PREMIUM-SCRIPT-DRGVPN"
-echo -e " \e[$line**************************************************************\e[m"
+echo -e " \e[$line=================================================================\e[m"
 echo -e "  \e[$text Cpu Model            :$cname"
 echo -e "  \e[$text Cpu Frequency        :$freq MHz"
 echo -e "  \e[$text Number Of Core       : $cores" 
@@ -137,19 +137,19 @@ echo -e "  \e[$text Order ID             : $oid"
 echo -e "  \e[$text Expired Status       : $exp $sts"
 echo -e "  \e[$text Provided By          : $creditt"
 echo -e "  \e[$text Status Update        : $stl"
-echo -e "  \e[$line***************************************************************\e[m"
+echo -e "  \e[$line=================================================================\e[m"
 echo -e "   \e[$text CPU Usage : $cpu_usage"                                       
 echo -e "   \e[$text Used RAM  : $uram MB"                                         
 echo -e "   \e[$text Free RAM  : $fram MB"                                        
-echo -e " \e[$line***************************************************************\e[m"
+echo -e " \e[$line==================================================================\e[m"
 echo -e "  \e[$text Traffic\e[0m       \e[${text}Today      Yesterday     Month   "
 echo -e "  \e[$text Download\e[0m   \e[${text}   $dtoday    $dyest       $dmon   \e[0m"
 echo -e "  \e[$text Upload\e[0m     \e[${text}   $utoday    $uyest       $umon   \e[0m"
 echo -e "  \e[$text Total\e[0m       \e[${text}  $ttoday    $tyest       $tmon  \e[0m "
-echo -e " \e[$line***************************************************************\e[m"
+echo -e " \e[$line=================================================================\e[m"
 echo -e " \e[$text Ssh/Ovpn   V2ray   Vless   Vlessxtls   Trojan-Ws   Trojan-Tls \e[0m "    
 echo -e " \e[$below    $total_ssh         $vmess       $vless       $xtls             $trws          $trtls \e[0m "
-echo -e " \e[$line***************************************************************\e[m"
+echo -e " \e[$line=================================================================\e[m"
 echo -e " \e[$number  [•1]\e[m \e[$below •XRAY VMESS & VLESS\e[m"          
 echo -e "  \e[$number [•2]\e[m \e[$below •TROJAN XRAY & WS\e[m"             
 echo -e "  \e[$number [•3]\e[m \e[$below •SSH & OPENVPN\e[m"                
@@ -164,16 +164,12 @@ echo -e "  \e[$number [•11]\e[m \e[$below•REMOVE SLOWDNS\e[m"
 echo -e "  \e[$number [•12]\e[m \e[$below•INFO\e[m"
 echo -e "  \e[$number [•13]\e[m \e[$below•LIMIT SPEED\e[m"
 echo -e "  \e[$number [•14]\e[m \e[$below•SLOWDNS INSTALL\e[m"
-echo -e "  \e[$number [•15]\e[m \e[$below•SLOWDNS INFO\e[m"
-echo -e " \e[$line*************************************************************\e[m"
+echo -e " \e[$line=================================================================\e[m"
 echo -e "  \e[$below Autoscript By        : DRGVPN"
 echo -e "  \e[$below Certificate Status   : Expired in $certifacate days"
 echo -e "  \e[$below remode by            : @DRG_VPN"
-echo -e "  \e[$below                kredit for"           
-echo -e "  \e[$below                 aquagurl"
-echo -e "  \e[$below                  v-code"
-echo -e "  \e[$below              all team DRGVPN"
-echo -e " \e[$line*************************************************************\e[m"
+echo -e "  \e[$below                    all team DRGVPN"
+echo -e " \e[$lin=================================================================\e[m"
 echo -e "  \e[$below[Ctrl + C] keluar-dari-script\e[m"
 echo -e "\e[$below "
 read -p " Select menu :  " menu
@@ -219,10 +215,7 @@ case $menu in
     limit-speed
     ;;
 14)
-    slowdns
-    ;;
-15)
-    slowdns-info
+    install
     ;;
 x)
     clear
