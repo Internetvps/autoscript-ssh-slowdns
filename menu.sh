@@ -158,7 +158,7 @@ echo -e "  \e[$number [•6]\e[m \e[$below •CHANGE PORT\e[m"
 echo -e "  \e[$number [•7]\e[m \e[$below •REBOOT NOW VPS\e[m"
 echo -e "  \e[$number [•8]\e[m \e[$below •CHANGE THEMES\e[m"
 echo -e "  \e[$number [•9]\e[m \e[$below •ADD IP\e[m"
-echo -e "  \e[$number [•10]\e[m \e[$below•INFO\e[m"
+echo -e "  \e[$number [•10]\e[m \e[$below•INFO SCRIPT\e[m"
 echo -e "  \e[$number [•11]\e[m \e[$below•MENU SLOWDNS\e[m"
 echo -e "  \e[$number [•12]\e[m \e[$below•INSTALL SLOWDNS\e[m"
 echo -e "  \e[$number [•13]\e[m \e[$below•LIMIT SPEED\e[m"
@@ -201,7 +201,7 @@ case $menu in
     addip
     ;;
 10)
-    info
+    about
     ;;
 11)
     slowdns
