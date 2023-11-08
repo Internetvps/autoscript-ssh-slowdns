@@ -167,10 +167,10 @@ echo -e "  \e[$below Autoscript By        : DRGVPN"
 echo -e "  \e[$text Order ID              : $oid"
 echo -e "  \e[$below remode by            : @DRG_VPN"
 echo -e "  \e[$below                    all team DRGVPN"
-echo -e " \e[$lin=================================================================\e[m"
+echo -e " \e[$line=================================================================\e[m"
 echo -e "  \e[$below[Ctrl + C] keluar-dari-script\e[m"
 echo -e "\e[$below "
-read -p " Select menu :  " menu
+read -p " input number :  " menu
 echo -e ""
 case $menu in
 1)
