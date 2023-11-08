@@ -1,4 +1,4 @@
-# Script drgvpn Websocket
+# Script DRGVPN multiport
 
  <h2 align="center">AutoScript VPN <img src="https://img.shields.io/badge/Version-senip_1.4-blue.svg"></h2>
 
@@ -98,10 +98,9 @@ systemctl restart wg-quick@wg0
    - Full Orders For Various Services
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 ## ⏩ BUY ME A COFFEE IF YOU LIKE THIS SCRIPT... ⏪
 
-![no_markReactNative-snapshot-image](https://github.com/Internetvps/autoscript-ssh-slowdns/assets/89685787/b648ba16-1f1c-40e1-b080-87f9b6209b5f)
+![no_markReactNative-snapshot-image](https://github.com/Internetvps/slowdns/assets/89685787/b648ba16-1f1c-40e1-b080-87f9b6209b5f)
 
  
 
@@ -110,3 +109,4 @@ systemctl restart wg-quick@wg0
   <a><img src="https://img.shields.io/badge/Dicopy%20©-drgvpn%20AutoScriptVPN%202023.%20All%20rights%20reserved...-blueviolet.svg" style="max-width:200%;">
     </p>
    </p>
+
