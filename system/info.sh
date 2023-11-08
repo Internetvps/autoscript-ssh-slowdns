@@ -1,7 +1,7 @@
+#!/bin/bash
 clear
-neofetch
+neofetch --ascii_distro SliTaz
+echo ' Created by drgvpn '
+echo ''
 cat /root/log-install.txt
-echo -e ""
-read -n 1 -s -r -p "  Press any key to back on menu"
-menu
-esac
+echo ""
