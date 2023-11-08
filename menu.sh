@@ -163,10 +163,11 @@ echo -e "  \e[$number [•10]\e[m \e[$below•INFO SCRIPT\e[m"
 echo -e "  \e[$number [•11]\e[m \e[$below•MENU SLOWDNS\e[m"
 echo -e "  \e[$number [•12]\e[m \e[$below•INSTALL SLOWDNS\e[m"
 echo -e "  \e[$number [•13]\e[m \e[$below•LIMIT SPEED\e[m"
+echo -e "  \e[$number [•14]\e[m \e[$below•TOTAL USE GB\e[m"
 echo -e " \e[$line=================================================================\e[m"
 echo -e "  \e[$below Autoscript By        : DRGVPN"
 echo -e "  \e[$below remode by            : @DRG_VPN"
-echo -e "  \e[$below                    all team DRGVPN"
+echo -e "  \e[$below                   TQ ALL TEAM DRGVPN"
 echo -e " \e[$line=================================================================\e[m"
 echo -e "  \e[$below[Ctrl + C] keluar-dari-script\e[m"
 echo -e "\e[$below "
@@ -212,6 +213,9 @@ case $menu in
 13)
     limit-speed
     ;;
+14)
+    vnstat
+    ;;    
 x)
     clear
     exit
