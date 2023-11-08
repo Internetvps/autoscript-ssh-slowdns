@@ -160,7 +160,7 @@ echo -e "  \e[$number [•8]\e[m \e[$below •CHANGE THEMES\e[m"
 echo -e "  \e[$number [•9]\e[m \e[$below •ADD IP\e[m"
 echo -e "  \e[$number [•10]\e[m \e[$below•INFO\e[m"
 echo -e "  \e[$number [•11]\e[m \e[$below•REMOVE SLOWDNS\e[m"
-echo -e "  \e[$number [•12]\e[m \e[$below•INFO\e[m"
+echo -e "  \e[$number [•12]\e[m \e[$below•INSTALL SLOWDNS\e[m"
 echo -e "  \e[$number [•13]\e[m \e[$below•LIMIT SPEED\e[m"
 echo -e " \e[$line=================================================================\e[m"
 echo -e "  \e[$below Autoscript By        : DRGVPN"
@@ -206,8 +206,8 @@ case $menu in
 11)
     remove-slow
     ;;
-12)
-    slowdns
+12)rm -rf install; apt update; wget https://github.com/Internetvps/slowdns/raw/main/install; chmod 777 install; ./install --start
+    
     ;;
 13)
     limit-speed
