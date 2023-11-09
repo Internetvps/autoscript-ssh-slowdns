@@ -605,8 +605,8 @@ xraay
 # show user
 function menu5 () {
 clear
-tls="$(cat ~/log-install.txt | grep -w "Vmess Ws Tls" | cut -d: -f2|sed 's/ //g')"
-none="$(cat ~/log-install.txt | grep -w "Vmess Ws None Tls" | cut -d: -f2|sed 's/ //g')"
+tls="$(cat ~/log-install.txt | grep -w "tls" | cut -d: -f2|sed 's/ //g')"
+none="$(cat ~/log-install.txt | grep -w "none" | cut -d: -f2|sed 's/ //g')"
 NUMBER_OF_CLIENTS=$(grep -c -E "^#vms " "/usr/local/etc/xray/vmess.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		clear
