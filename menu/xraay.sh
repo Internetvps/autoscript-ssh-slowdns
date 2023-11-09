@@ -1201,14 +1201,13 @@ read -n 1 -s -r -p "Press any key to back on menu xray"
 xraay
 }
 
-# USER LOGIN VLESS WS
 function menu12 () {
 clear
 echo -n > /tmp/other.txt
-data=( ` cat /usr/local/etc/xray/vless.json | grep '^vls' | cut -d ' ' -f 2`);
-echo -e "-------------------------------";
-echo -e "${green}XRAY VLESS WS USER LOGIN${NC}";
-echo -e "-------------------------------";
+data=( `cat /usr/local/etc/xray/vless.json | grep '^#vls' | cut -d ' ' -f 2`); 
+echo -e "\033[0;34m══════════════════════════════════════════\033[0m"
+echo -e "\\E[0;44;37m      ⇱ XRAY Vless WS User Login  ⇲       \E[0m"
+echo -e "\033[0;34m══════════════════════════════════════════\033[0m"
 for akun in "${data[@]}"
 do
 if [[ -z "$akun" ]]; then
@@ -1220,7 +1219,7 @@ for ip in "${data2[@]}"
 do
 jum=$(cat /var/log/xray/access.log | grep -w $akun | awk '{print $3}' | cut -d: -f1 | grep -w $ip | sort | uniq)
 if [[ "$jum" = "$ip" ]]; then
-echo "$jum" >> /tmp/ipvless.txt
+echo "$jum" >> /tmp/ipvmess.txt
 else
 echo "$ip" >> /tmp/other.txt
 fi
@@ -1234,19 +1233,17 @@ else
 jum2=$(cat /tmp/ipvless.txt | nl)
 echo "user : $akun";
 echo "$jum2";
-echo "-------------------------------"
+echo ""
+echo -e "\e[$line══════════════════════════════════════════\e[m"
 fi
 rm -rf /tmp/ipvless.txt
-done
-oth=$(cat /tmp/other.txt | sort | uniq | nl)
-echo "other";
-echo "$oth";
-echo "-------------------------------"
 rm -rf /tmp/other.txt
+done
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Press any key to back on menu xray"
 xraay
 }
+
 
 # CREATE USER VLESS XTLS
 function menu13 () {
