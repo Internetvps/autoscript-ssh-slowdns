@@ -30,7 +30,7 @@ clear
 
 setadmin() {
 #isi link git
-linkinstall="https://raw.githubusercontent.com/namagit/git-repo/main"
+linkinstall="https://raw.githubusercontent.com/Internetvps/autoscript-ssh-slowdns/main"
 rm -rf /etc/adminip/
 mkdir -p /etc/adminip
 read -p "INPUT OWNER ACCESS TOKEN CODE " ans
