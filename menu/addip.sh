@@ -27,6 +27,10 @@ echo -e "${green}Permission Accepted...${NC}"
 else
 rm -rf addip.sh
 clear
+echo -e "${red}Permission Denied!${NC}";
+echo "OWNER AREA ONLY"
+exit 0
+fi
 
 setadmin() {
 #isi link git
