@@ -1,7 +1,7 @@
 # /usr/local/bin/cdn-ssl
 [Unit]
-Description=Python WS-SSL By drgvpn
-Documentation=https://drgvpn.xyz
+Description=Python WS-SSL By comingsoon
+Documentation=https://comingsoon.xyz
 After=network.target nss-lookup.target
 
 [Service]
