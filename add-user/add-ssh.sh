@@ -23,7 +23,7 @@ echo -e   "  \e[$back_text           \e[30m[\e[$box CREATE USER SSH & OPENVPN\e[
 echo -e   "  \e[$line═══════════════════════════════════════════════════════\e[m"
 read -p "   Username : " Login
 read -p "   Password : " Pass
-read -p "   Bug SNI/Host (Example : m.facebook.com) : " sni
+read -p "   Bug SNI/Host (Example : m.youtube.com) : " sni
 read -p "   Expired (days): " masaaktif
 
 IP=$(wget -qO- icanhazip.com);
